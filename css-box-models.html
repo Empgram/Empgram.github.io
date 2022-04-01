@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-box-models</title>
+    <div class = "image"></div>
+    <ul class = a10>
+        <li><b>Exercise : Box Models</b></li>
+        <li><a link href="index002.html">HOME</a></li>
+    
+        </ul>
+        
+</head>
+<body>
+    <div class="standard">I am using the standard box
+        model.</div>
+        <div class="standard alternate">I am using the alternate box
+        model.</div>
+        
+</body>
+<style> .standard {
+    border: 5px solid teal;
+    background-color: #A5CFE3;
+    padding: 40px;
+    margin: 40px;
+    width: 350px;
+    height: 150px;
+    margin: 0 auto;
+   
+    }
+    .alternate {
+    box-sizing: border-box;
+    background-color: #A5CFE3;
+    padding: 40px;
+  
+    width: 440px;
+    height: 240px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 55px;
+    }
+    .a10 {
+    
+    border:3px solid blue;
+     box-shadow: 0 4px 8px 0 blue;
+     background-color: teal;
+     width: 70%;
+     margin: 0;
+     padding: 10px;
+     text-align: center;
+
+ text-decoration:none ;
+ overflow: hidden;
+ margin-left: 180px;
+
+ margin-bottom: 30px;
+ 
+ }
+ .a10 li{
+     margin: 0;display : inline-block; padding-right: 100px;font-size: 30px; color: white;font-weight: 800;}
+ .a10 li a{text-decoration: none;  margin:0px;  font-weight: bolder;color: white;
+ }
+    
+    body{margin: 0%;  background: radial-gradient(circle at bottom ,white 0%,black 100% );}
+    .a10 li a:hover{color :red;}
+    .image {
+   float: left;
+ 
+       width: 5%;
+       height: 65px;
+     padding: 15px;
+       box-shadow: 0 4px 8px 0 blue;
+      margin-left: 30px;
+       background-image: url("logo.png");background-repeat: no-repeat;background-size: 100%;
+     
+      }
+    
+    </style>
+    
+</html>
