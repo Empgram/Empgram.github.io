@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <style>.home{ 
+      background-color: teal;
+      width: 10%;
+      margin: 0;
+      padding: 15px;
+      text-align: center;
+  
+  position: fixed;
+  
+  font-size: 30px; color: white;font-weight: 800;margin-left: 85%;}
+  .home a{text-decoration: none;  margin:0px;padding: 0;  font-weight: bolder;color: white; 
+  }
+  
+  
+  </style>
+  <div class = "home"><a link href="index1.html">Back</a></div>
+  
+      
+</head>
+<body>
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+       
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; Close</a>
+        <a link href="#about">About</a>
+        <a link href="#education">Education</a>
+       <a link href="#skill">Skill</a>
+         <a link href="#portfolio">Portfolio</a>
+        <a link href="#contact">Contact</a>
+      </div>
+      
+     
+      </div>
+      <script>
+    
+      
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "960px";
+        document.getElementById("main").style.marginLeft = "960px";
+        
+      }
+      
+      /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0%";
+        document.getElementById("main").style.marginLeft = "0";
+      }</script>
+</body>
+<style>
+.sidebar {
+  height: 10%; /* 100% Full-height */
+  width: 0%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color:blue ; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s;
+  display: inline;/* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  font-weight: bolder;
+  display: inline;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+</style>
+</html>
