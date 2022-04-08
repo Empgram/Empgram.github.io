@@ -25,9 +25,9 @@
 </head>
 <body>
     <div id="main">
-        <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+        <button class="openbtn" onclick="openNav()">&#9776; Open Nav bar</button>
        
-    <div id="mySidebar" class="sidebar">
+    <div id="myNavbar" class="navbar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; Close</a>
         <a link href="#about">About</a>
         <a link href="#education">Education</a>
@@ -42,19 +42,19 @@
     
       
       function openNav() {
-        document.getElementById("mySidebar").style.width = "960px";
+        document.getElementById("myNavbar").style.width = "960px";
         document.getElementById("main").style.marginLeft = "960px";
         
       }
       
       /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
       function closeNav() {
-        document.getElementById("mySidebar").style.width = "0%";
+        document.getElementById("myNavbar").style.width = "0%";
         document.getElementById("main").style.marginLeft = "0";
       }</script>
 </body>
 <style>
-.sidebar {
+.navbar {
   height: 10%; /* 100% Full-height */
   width: 0%; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -69,7 +69,7 @@
 }
 
 /* The sidebar links */
-.sidebar a {
+.navbar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -78,12 +78,12 @@
   display: inline;
   transition: 0.3s;
 }
-.sidebar a:hover {
+.navbar a:hover {
   color: #f1f1f1;
 }
 
 /* Position and style the close button (top right corner) */
-.sidebar .closebtn {
+.navbar .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
@@ -113,8 +113,8 @@
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .navbar {padding-top: 15px;}
+  .navbar a {font-size: 18px;}
 }
 
 
